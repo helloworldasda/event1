@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change CSS Styles</title>
+<style>
+  #myElement {
+    display: none;
+    width: 50%;
+    background-color: red;
+    border: 2px solid black;
+    font-size: 2em;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="myElement">Hello, this is the styled element!</div>
+
+<script>
+  var element = document.getElementById("myElement");
+
+  element.addEventListener("click", function() {
+    element.style.display = "block";
+    element.style.width = "75%";
+    element.style.backgroundColor = "blue";
+    element.style.border = "2px solid black";
+    element.style.fontSize = "5em";
+    element.style.color = "white";
+    element.style.margin = "20px";
+    element.style.paddingLeft = "10px";
+    element.style.paddingBottom = "10px";
+  });
+</script>
+
+</body>
+</html>
